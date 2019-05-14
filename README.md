@@ -6,7 +6,7 @@ Docker container to be used as a tinysshd jumpbox
 You need to mount a dir containing a file named `authorized_keys` (list of public keys) to `/keys-src` on the container.
 
 ```
-docker run -v /dir/containing/authorized_keys:/key-src -p 22:22 bentastic27/tisshd-jumpbox
+docker run -v /dir/containing/authorized_keys:/key-src -p 22:22 bentastic27/tinysshd-jumpbox
 ```
 
 Per tinysshd it will only work with ed25519 keys. So you will need to generate with something like following:
